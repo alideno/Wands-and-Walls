@@ -177,13 +177,13 @@ while run:
         if user.wands[0] is not None:
             
             attack1_button.change_image(attack_btn_img)
-            attack1_button.add_image(user.wands[0].image,(10,10))
+            attack1_button.add_image(user.wands[0].image,(10,0))
             attack1_button.add_text(f"{user.wands[0].name}", (BUTTON_TEXT_OFFSET_X, 30), text_color=(0, 0, 0), font = custom_font)
             attack1_button.add_text(f"Level: {user.wands[0].level}", (BUTTON_TEXT_OFFSET_X, 80), text_color=(0, 0, 0), font = custom_font)
             attack1_button.add_text(f"Uses: {user.wands[0].current_durability}/{user.wands[0].total_durability}", (BUTTON_TEXT_OFFSET_X, 130), text_color=(0, 0, 0), font = custom_font)
             
             if attack1_button.draw(screen) and user.wands[0].current_durability > 0:
-
+                
                 enmy.take_damage(user.wands[0].deal_damage())
                 user.take_damage(enmy.deal_damage())
                                 
@@ -193,6 +193,7 @@ while run:
         
         if user.wands[1] is not None:
             attack2_button.change_image(attack_btn_img)
+            attack2_button.add_image(user.wands[1].image,(10,0))
             attack2_button.add_text(f"{user.wands[1].name}", (BUTTON_TEXT_OFFSET_X, 30), text_color=(0, 0, 0), font = custom_font)
             attack2_button.add_text(f"Level: {user.wands[1].level}", (BUTTON_TEXT_OFFSET_X, 80), text_color=(0, 0, 0), font = custom_font)
             attack2_button.add_text(f"Uses: {user.wands[1].current_durability}/{user.wands[1].total_durability}", (BUTTON_TEXT_OFFSET_X, 130), text_color=(0, 0, 0), font = custom_font)
@@ -207,6 +208,7 @@ while run:
             
         if user.wands[2] is not None:
             attack3_button.change_image(attack_btn_img)
+            attack3_button.add_image(user.wands[2].image,(10,0))
             attack3_button.add_text(f"{user.wands[2].name}", (BUTTON_TEXT_OFFSET_X, 30), text_color=(0, 0, 0), font = custom_font)
             attack3_button.add_text(f"Level: {user.wands[2].level}", (BUTTON_TEXT_OFFSET_X, 80), text_color=(0, 0, 0), font = custom_font)
             attack3_button.add_text(f"Uses: {user.wands[2].current_durability}/{user.wands[2].total_durability}", (BUTTON_TEXT_OFFSET_X, 130), text_color=(0, 0, 0), font = custom_font)
@@ -220,6 +222,7 @@ while run:
             
         if user.wands[3] is not None:
             attack4_button.change_image(attack_btn_img)
+            attack4_button.add_image(user.wands[3].image,(10,0))
             attack4_button.add_text(f"{user.wands[3].name}", (BUTTON_TEXT_OFFSET_X, 30), text_color=(0, 0, 0), font = custom_font)
             attack4_button.add_text(f"Level: {user.wands[3].level}", (BUTTON_TEXT_OFFSET_X, 80), text_color=(0, 0, 0), font = custom_font)
             attack4_button.add_text(f"Uses: {user.wands[3].current_durability}/{user.wands[3].total_durability}", (BUTTON_TEXT_OFFSET_X, 130), text_color=(0, 0, 0), font = custom_font)
